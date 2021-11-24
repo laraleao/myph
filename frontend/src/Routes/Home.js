@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
   Button,
 } from 'react-native';
-// import api from './services/api';
+import api from './services/api';
 
 const styles = StyleSheet.create({
   container: {

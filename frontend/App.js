@@ -4,7 +4,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Home from './src/Routes/Home';
 import Inicio from './src/Routes/Inicio';
 import Cadastro from './src/Routes/Cadastro';
-// import Remedio from './src/Routes/Remedio';
+import Remedio from './src/Routes/Remedio';
 
 const Stack = createNativeStackNavigator();
 
@@ -18,7 +18,7 @@ const App = () => {
 
         <Stack.Screen name="Cadastro" component={Cadastro} />
 
-        {/* <Stack.Screen name="Remedio" component={Remedio} /> */}
+        <Stack.Screen name="Remedio" component={Remedio} />
       </Stack.Navigator>
     </NavigationContainer>
   );
