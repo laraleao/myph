@@ -11,7 +11,7 @@ import api from './services/api';
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#F3F2C9',
+    backgroundColor: '#80ED99',
     flex: 1,
     justifyContent: 'center',
     paddingHorizontal: 32,
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     fontSize: 22,
     fontWeight: 'bold',
     letterSpacing: 0.25,
-    color: '#003638',
+    color: '#22577A',
   },
 
   input: {
