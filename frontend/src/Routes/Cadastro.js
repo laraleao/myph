@@ -5,32 +5,44 @@ import {
   StyleSheet,
   TextInput,
   TouchableOpacity,
-  Button,
+  TouchableHighlight,
 } from 'react-native';
 import api from './services/api';
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#F3F2C9',
+    backgroundColor: '#80ED99',
     flex: 1,
-    justifyContent: 'center',
+    alignItems: 'center',
     paddingHorizontal: 32,
-    borderRadius: 4,
+    paddingTop: 50,
   },
 
   text: {
-    fontSize: 22,
+    padding: 8,
+    color: '#091357',
+    fontSize: 25,
     fontWeight: 'bold',
     letterSpacing: 0.25,
-    color: '#003638',
   },
 
   input: {
+    marginTop: 8,
     height: 40,
-    margin: 12,
+    width: 230,
+    margin: 18,
     borderWidth: 1,
+    borderRadius: 2,
     padding: 10,
-    color: 'gray',
+  },
+
+  button: {
+    alignItems: 'center',
+    padding: 10,
+    height: 40,
+    width: 120,
+    letterSpacing: 0.25,
+    backgroundColor: '#22577A',
   },
 });
 
@@ -90,7 +102,9 @@ const Cadastro = () => {
         />
       </TouchableOpacity>
 
-      <Button onPress={() => handleSignIn()} title="Cadastrar" />
+      <TouchableHighlight onPress={() => handleSignIn()} style={styles.button}>
+        <Text>Cadastrar</Text>
+      </TouchableHighlight>
     </View>
   );
 };
