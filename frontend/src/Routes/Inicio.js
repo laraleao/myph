@@ -3,7 +3,7 @@ import {View, Text, StyleSheet, TouchableHighlight} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#80ED99',
+    backgroundColor: 'white',
     flex: 1,
     alignItems: 'center',
     paddingHorizontal: 32,
@@ -31,10 +31,28 @@ const styles = StyleSheet.create({
   button: {
     alignItems: 'center',
     padding: 10,
-    height: 40,
-    width: 150,
+    height: 50,
+    width: 180,
     letterSpacing: 0.25,
     backgroundColor: '#22577A',
+    borderRadius: 2,
+  },
+
+  buttonGerencia: {
+    alignItems: 'center',
+    padding: 10,
+    height: 75,
+    width: 180,
+    letterSpacing: 0.25,
+    backgroundColor: '#22577A',
+    borderRadius: 2,
+  },
+
+  buttonText: {
+    color: 'white',
+    fontSize: 20,
+    fontWeight: 'bold',
+    letterSpacing: 0.25,
   },
 });
 
@@ -65,10 +83,11 @@ const Inicio = () => {
     <View style={styles.container}>
       <Text style={styles.text}> Bem vindo</Text>
       {/* FAZER */}
+
       <TouchableHighlight
         onPress={() => handleAlterPress()}
-        style={styles.button}>
-        <Text>Gerenciar Remédios</Text>
+        style={styles.buttonGerencia}>
+        <Text style={styles.buttonText}>Gerenciar Remédios</Text>
       </TouchableHighlight>
       {/* <TouchableOpacity>
         <TextInput
@@ -80,19 +99,20 @@ const Inicio = () => {
 
       <TouchableHighlight
         onPress={() => handleAlterPress()}
-        style={styles.button}>
-        <Text>Gerenciar Usuários</Text>
-      </TouchableHighlight>
-      <TouchableHighlight
-        onPress={() => handleAlterPress()}
-        style={styles.button}>
-        <Text>Alterar usuário</Text>
+        style={styles.buttonGerencia}>
+        <Text style={styles.buttonText}>Gerenciar Usuários</Text>
       </TouchableHighlight>
 
       <TouchableHighlight
         onPress={() => handleAlterPress()}
         style={styles.button}>
-        <Text>Alterar senha</Text>
+        <Text style={styles.buttonText}>Alterar usuário</Text>
+      </TouchableHighlight>
+
+      <TouchableHighlight
+        onPress={() => handleAlterPress()}
+        style={styles.button}>
+        <Text style={styles.buttonText}>Alterar senha</Text>
       </TouchableHighlight>
     </View>
   );

@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Icon from 'react-native-vector-icons/Fontisto';
 import {
   Text,
   View,
@@ -11,7 +12,7 @@ import api from './services/api';
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#80ED99',
+    backgroundColor: 'white',
     flex: 1,
     alignItems: 'center',
     paddingHorizontal: 32,
@@ -26,6 +27,20 @@ const styles = StyleSheet.create({
     letterSpacing: 0.25,
   },
 
+  textLogoNome: {
+    fontSize: 75,
+    fontWeight: 'bold',
+    letterSpacing: 0.25,
+    color: '#22577A',
+  },
+
+  textLogo2: {
+    fontSize: 22,
+    fontWeight: 'bold',
+    letterSpacing: 0.25,
+    color: '#2e798a',
+  },
+
   input: {
     marginTop: 8,
     height: 40,
@@ -38,11 +53,19 @@ const styles = StyleSheet.create({
 
   button: {
     alignItems: 'center',
+    justifyContent: 'center',
     padding: 10,
-    height: 40,
-    width: 120,
-    letterSpacing: 0.25,
+    height: 50,
+    width: 130,
     backgroundColor: '#22577A',
+    borderRadius: 2,
+  },
+
+  buttonText: {
+    color: 'white',
+    fontSize: 20,
+    fontWeight: 'bold',
+    letterSpacing: 0.25,
   },
 });
 
@@ -72,6 +95,14 @@ const Cadastro = () => {
 
   return (
     <View style={styles.container}>
+      <TouchableOpacity>
+        <Text style={styles.textLogoNome}>
+          MyPH{' '}
+          <Icon name="drug-pack" size={60} color="1389E4" flexDirection="row" />
+        </Text>
+
+        <Text style={styles.textLogo2}> My Pocket Home </Text>
+      </TouchableOpacity>
       <TouchableOpacity>
         <Text style={styles.text}>Nome</Text>
         <TextInput
@@ -103,7 +134,7 @@ const Cadastro = () => {
       </TouchableOpacity>
 
       <TouchableHighlight onPress={() => handleSignIn()} style={styles.button}>
-        <Text>Cadastrar</Text>
+        <Text style={styles.buttonText}>Cadastrar</Text>
       </TouchableHighlight>
     </View>
   );

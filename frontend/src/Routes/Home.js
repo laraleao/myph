@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import Icon from 'react-native-vector-icons/Fontisto';
-
 import {
   Text,
   View,
@@ -13,7 +12,7 @@ import api from './services/api';
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#80ED99',
+    backgroundColor: 'white',
     flex: 1,
     alignItems: 'center',
     paddingHorizontal: 32,
@@ -54,10 +53,25 @@ const styles = StyleSheet.create({
 
   button: {
     alignItems: 'center',
+    justifyContent: 'center',
     padding: 10,
-    height: 40,
-    width: 60,
+    height: 46,
+    width: 80,
     backgroundColor: '#22577A',
+    borderRadius: 2,
+  },
+
+  buttonText: {
+    color: 'white',
+    fontSize: 20,
+    fontWeight: 'bold',
+    letterSpacing: 0.25,
+  },
+
+  buttonSemCadastro: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    letterSpacing: 0.25,
   },
 });
 
@@ -89,11 +103,12 @@ const Home = ({navigation}) => {
       <TouchableOpacity>
         <Text style={styles.textLogoNome}>
           MyPH{' '}
-          <Icon name="drug-pack" size={60} color="#000" flexDirection="row" />
+          <Icon name="drug-pack" size={60} color="1389E4" flexDirection="row" />
         </Text>
 
         <Text style={styles.textLogo2}> My Pocket Home </Text>
       </TouchableOpacity>
+
       <TouchableOpacity>
         <Text style={styles.textInput}>Login</Text>
         <TextInput
@@ -103,6 +118,7 @@ const Home = ({navigation}) => {
           value={email}
         />
       </TouchableOpacity>
+
       <TouchableOpacity>
         <Text style={styles.textInput}>Senha</Text>
         <TextInput
@@ -112,16 +128,22 @@ const Home = ({navigation}) => {
           value={password}
         />
       </TouchableOpacity>
+
       <TouchableHighlight
         style={styles.button}
         onPress={() => handleSignInPress()}>
-        <Text>Logar</Text>
+        <Text style={styles.buttonText}>Logar</Text>
       </TouchableHighlight>
+
       <TouchableHighlight
         style={styles.buttonCadastro}
         onPress={() => navigation.navigate('Cadastro')}>
-        <Text>Não possui cadastro?</Text>
+        <Text style={styles.buttonSemCadastro}>Não possui cadastro?</Text>
       </TouchableHighlight>
+
+      <Text style={{padding: 80, fontSize: 15, color: 'black'}}>
+        Versão 1.0
+      </Text>
     </View>
   );
 };

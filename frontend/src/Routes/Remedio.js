@@ -12,7 +12,7 @@ import {WebView} from 'react-native-webview';
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#80ED99',
+    backgroundColor: 'white',
     flex: 1,
     alignItems: 'center',
     paddingHorizontal: 32,
@@ -39,11 +39,19 @@ const styles = StyleSheet.create({
 
   button: {
     alignItems: 'center',
+    justifyContent: 'center',
     padding: 10,
-    height: 40,
-    width: 120,
-    letterSpacing: 0.25,
+    height: 50,
+    width: 130,
     backgroundColor: '#22577A',
+    borderRadius: 2,
+  },
+
+  buttonText: {
+    color: 'white',
+    fontSize: 20,
+    fontWeight: 'bold',
+    letterSpacing: 0.25,
   },
 });
 
@@ -74,6 +82,7 @@ const Remedio = () => {
           />
         </TouchableOpacity>
 
+        {/* ALTERAR */}
         <TouchableOpacity>
           <Text
             style={styles.text}
@@ -100,7 +109,7 @@ const Remedio = () => {
 
         {/* CRIAR FUNCAO */}
         <TouchableHighlight onPress={() => FUNCAO()} style={styles.button}>
-          <Text>Cadastrar</Text>
+          <Text style={styles.buttonText}>Cadastrar</Text>
         </TouchableHighlight>
       </View>
     );

@@ -14,11 +14,11 @@ const App = () => {
       <Drawer.Navigator>
         <Drawer.Screen name="Home" component={Home} />
 
-        <Drawer.Screen name="Inicio" component={Inicio} />
+        <Drawer.Screen name="Início" component={Inicio} />
 
         <Drawer.Screen name="Cadastro" component={Cadastro} />
 
-        <Drawer.Screen name="Remedio" component={Remedio} />
+        <Drawer.Screen name="Remédio" component={Remedio} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
