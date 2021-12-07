@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     fontSize: 22,
     fontWeight: 'bold',
     letterSpacing: 0.25,
-    color: '#2e798a',
+    color: '#2E798A',
   },
 
   input: {
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
   },
 
   textInput: {
-    padding: 8,
+    padding: 16,
     color: '#091357',
     fontSize: 22,
     fontWeight: 'bold',

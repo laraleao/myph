@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import NumericInput from 'react-native-numeric-input';
 import {
   Text,
   View,
@@ -72,7 +73,7 @@ const Remedio = () => {
           <TextInput style={styles.input} onChangeText={setNome} value={nome} />
         </TouchableOpacity>
 
-        {/* NUMERO - FAZER */}
+        {/* NUMERO - FAZER? */}
         <TouchableOpacity>
           <Text style={styles.text}>Validade</Text>
           <TextInput
@@ -82,7 +83,6 @@ const Remedio = () => {
           />
         </TouchableOpacity>
 
-        {/* ALTERAR */}
         <TouchableOpacity>
           <Text
             style={styles.text}
@@ -93,10 +93,23 @@ const Remedio = () => {
           <Button onPress={() => setGo(true)} title="Pesquisar Bula" />
         </TouchableOpacity>
 
-        <TouchableOpacity>
-          <Text style={styles.text}>Quantidade</Text>
-          <TextInput style={styles.input} onChangeText={setQtde} value={qtde} />
-        </TouchableOpacity>
+        <Text style={styles.text}>Quantidade</Text>
+        <NumericInput
+          style={styles.input}
+          value={qtde}
+          onChangeText={setQtde}
+          totalWidth={140}
+          totalHeight={50}
+          minValue={1}
+          maxValue={50}
+          valueType="integer"
+          iconSize={22}
+          step={1.5}
+          rounded
+          textColor="#091357"
+          rightButtonBackgroundColor="#22577E"
+          leftButtonBackgroundColor="#5584AC"
+        />
 
         <TouchableOpacity>
           <Text style={styles.text}>Associar remédio</Text>

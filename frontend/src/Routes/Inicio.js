@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
     letterSpacing: 0.25,
     backgroundColor: '#22577A',
     borderRadius: 2,
+    marginTop: 18,
   },
 
   buttonGerencia: {
@@ -46,6 +47,7 @@ const styles = StyleSheet.create({
     letterSpacing: 0.25,
     backgroundColor: '#22577A',
     borderRadius: 2,
+    marginTop: 18,
   },
 
   buttonText: {
