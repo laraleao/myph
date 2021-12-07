@@ -84,20 +84,12 @@ const Inicio = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}> Bem vindo</Text>
-      {/* FAZER */}
 
       <TouchableHighlight
         onPress={() => handleAlterPress()}
         style={styles.buttonGerencia}>
         <Text style={styles.buttonText}>Gerenciar Remédios</Text>
       </TouchableHighlight>
-      {/* <TouchableOpacity>
-        <TextInput
-          style={styles.input}
-          onChangeText={setPassword}
-          value={password}
-          placeholder="Alterar senha"></TextInput>
-      </TouchableOpacity> */}
 
       <TouchableHighlight
         onPress={() => handleAlterPress()}
