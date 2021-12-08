@@ -80,12 +80,12 @@ const Cadastro = () => {
       return;
     } else {
       try {
-        const response = await api.post('/users', {
+        const response = await api.post('/usuario', {
           email: email,
-          name: name,
-          password: password,
+          nome: name,
+          senha: password,
         });
-        if (response.status == 201) {
+        if (response.status == 200) {
         }
       } catch (e) {
         console.log(e);
@@ -98,7 +98,7 @@ const Cadastro = () => {
       <TouchableOpacity>
         <Text style={styles.textLogoNome}>
           MyPH{' '}
-          <Icon name="drug-pack" size={60} color="1389E4" flexDirection="row" />
+          <Icon name="drug-pack" size={60} color={1389e4} flexDirection="row" />
         </Text>
 
         <Text style={styles.textLogo2}> My Pocket Home </Text>

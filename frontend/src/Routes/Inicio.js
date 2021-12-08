@@ -67,7 +67,7 @@ const Inicio = () => {
       return;
     } else {
       try {
-        const response = await api.patch('/users', {
+        const response = await api.post('/usuario/login', {
           password: password,
         });
         if (password != null) {

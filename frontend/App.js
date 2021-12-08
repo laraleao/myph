@@ -14,7 +14,7 @@ const App = () => {
       <Drawer.Navigator>
         <Drawer.Screen name="Home" component={Home} />
 
-        <Drawer.Screen name="Início" component={Inicio} />
+        <Drawer.Screen name="Inicio" component={Inicio} />
 
         <Drawer.Screen name="Cadastro" component={Cadastro} />
 

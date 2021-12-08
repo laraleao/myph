@@ -85,11 +85,11 @@ const Home = ({navigation}) => {
       return;
     } else {
       try {
-        const response = await api.post('/sessions', {
+        const response = await api.post('/usuario/login', {
           email: email,
-          password: password,
+          senha: password,
         });
-        if (response.status == 201) {
+        if (response.status == 200) {
           navigation.navigate('Inicio');
         }
       } catch (e) {
@@ -103,7 +103,7 @@ const Home = ({navigation}) => {
       <TouchableOpacity>
         <Text style={styles.textLogoNome}>
           MyPH{' '}
-          <Icon name="drug-pack" size={60} color="1389E4" flexDirection="row" />
+          <Icon name="drug-pack" size={60} color={1389e4} flexDirection="row" />
         </Text>
 
         <Text style={styles.textLogo2}> My Pocket Home </Text>
