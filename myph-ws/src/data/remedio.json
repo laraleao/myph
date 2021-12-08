@@ -1,0 +1,32 @@
+[
+  {
+    "nome": "Dipirona",
+    "bula": "linkdabula.com.br/dipirona",
+    "quantidade": "10",
+    "data": "10/02/2025"
+  },
+  {
+    "nome": "Paracetamol",
+    "bula": "linkdabula.com.br/paracetamol",
+    "quantidade": "5",
+    "data": "17/01/2027"
+  },
+  {
+    "nome": "Dorflex",
+    "bula": "linkdabula.com.br/dorflex",
+    "quantidade": "20",
+    "data": "30/10/2024"
+  },
+  {
+    "nome": "Amoxicilina",
+    "bula": "linkdabula.com.br/amoxicilina",
+    "quantidade": "2",
+    "data": "23/04/2030"
+  },
+  {
+    "nome": "Anfetamina",
+    "bula": "linkdabula.com.br/anfetamina",
+    "quantidade": "1",
+    "data": "11/01/2021"
+  }
+]
